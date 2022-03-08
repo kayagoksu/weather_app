@@ -1,13 +1,139 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  /* background-color: #565a5e; */
+  color: #ffffff;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.bi-search {
+  width: 200px;
+  height: 200px;
+}
+
+.btn {
+  border: 1px solid #ced4da00;
+  background-color: rgba(81, 159, 185, 0.425);
+  color: #4a4c4e;
+  font-size: 5vw;
+  border-radius: 0;
+}
+
+.btn:focus {
+  border-color: rgba(0, 0, 0, 0);
+  box-shadow: 0 0 0 0;
+}
+
+.form-control:focus {
+  border-color: rgba(0, 0, 0, 0);
+  box-shadow: 0 0 0 0;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.background-cold {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./images/cold.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.background-warm {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./images/warm.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.background-hot {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./images/hot.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.fontSize {
+  font-size: 15vw;
+  min-width: 100px;
+}
+
+@media screen and (max-width: 1200px) {
+  .fontSize {
+    font-size: 12vw;
+  }
+}
+
+.fontSize2 {
+  font-size: 5vw;
+  min-width: 100px;
+}
+
+@media screen and (min-width: 500px) {
+  .fontSize2 {
+    font-size: 3vw;
+  }
+}
+
+.fontSize3 {
+  font-size: 3vw;
+  min-width: 100px;
+}
+
+@media screen and (min-width: 500px) {
+  .fontSize3 {
+    font-size: 2vw;
+  }
+}
+
+.search {
+  justify-content: flex-end;
+}
+
+.height {
+  height: 100vh;
+}
+
+.search-bg {
+  background-image: linear-gradient(
+    rgba(57, 88, 99, 0.425),
+    rgba(57, 88, 99, 0.425)
+  );
+  backdrop-filter: blur(5px);
+}
+
+.display {
+  display: inline-grid;
+}
+
+.search-box {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0;
+  border-bottom: solid 2px #ced4da;
+  border-radius: 0;
+  color: aqua;
+}
+
+.line {
+  width: auto;
+  height: 2px;
+  background: #ced4da;
+}
+
+.font {
+  font-size: 3vw;
+}
+@media screen and (min-width: 800px) {
+  .font {
+    font-size: 20px;
+  }
+}
+
+.font-header {
+  font-size: 5vw;
+  color: rgb(81, 159, 185);
+}
+@media screen and (min-width: 800px) {
+  .font-header {
+    font-size: 40px;
+  }
 }
