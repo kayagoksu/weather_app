@@ -23,19 +23,11 @@ const Weather = () => {
           setIsLoaded(true);
           setItems(result);
           setValue("");
-          console.log(result.name);
-          console.log(result.main.temp);
-          console.log(result.main.humidity);
-          console.log(result.weather[0].description);
-          console.log(result.weather[0].icon);
           let url = iconUrl + result.weather[0].icon + "@2x.png";
-          console.log(url);
 
           let val = Math.round(result.main.temp);
 
           changeBackground(val);
-
-          console.log(val);
 
         }
       )
@@ -73,7 +65,6 @@ const Weather = () => {
   }
 
   const handleSubmit = () => {
-    console.log("hello world!!!");
     let place = document.getElementById("place").value;
     getWeather(place);
   }
